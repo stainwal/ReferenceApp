@@ -11,5 +11,4 @@ Secondary resource - http://clock.co.uk/blog/a-simple-website-in-nodejs-with-exp
 
 
 TODO: 
-Add a MongoDB backend
-Host on Heroku
+Add a MongoDB backend; Host on Heroku
