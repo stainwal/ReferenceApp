@@ -1,9 +1,12 @@
 /*
  * Module dependencies
  */
-var express = require('express');
-var app = express();
+var express = require('express'); 
 var hbs = require('hbs');
+//var path = require("path");
+var http = require("http");
+
+var app = express();
 
 /*
  * Setup Handlebars as templating engine 
@@ -42,4 +45,7 @@ app.get('/testParse', function(req, res) {
 /*
  * Make app listen to port 3000 
  */
-app.listen(3000)
+//app.listen(3000)
+port = process.env.PORT || 5000;
+var server = http.createServer(app);
+server.listen(port);
