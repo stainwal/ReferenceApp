@@ -35,8 +35,6 @@ app.get('/', function (req, res) {
  * Route2 
  */
 app.get('/testParse', function(req, res) {
-	var XLS = require('xlsjs');
-	var workbook = XLS.readFile('../P0MissionScenarioExport.xls');
 	res.render('testParse', { title : 'TestParse', content : 'This came from app.js'});
 });
 
